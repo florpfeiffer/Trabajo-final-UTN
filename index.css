@@ -47,7 +47,6 @@ h1 {
 }
 
 h2 {
-
     font-size: 40px;
     font-weight: bold;
     color: #678983;
@@ -101,7 +100,7 @@ footer {
     color: #181D31;
 }
 
-.pie{
+.pie {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
@@ -110,7 +109,7 @@ footer {
 
 }
 
-.logo_pie{
+.logo_pie {
     height: 80px;
 }
 
