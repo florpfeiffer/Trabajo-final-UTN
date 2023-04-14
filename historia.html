@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Proyecto-Final</title>
     <link rel="icon" href="/Final/Info-Trabajo-Final/assets/imagenes/logo.png"/>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     <nav>
-      <p>logo</p>
+      <a href="/Mi Proyecto/index.html">logo</a>
       <ul class="menu_inicio">
         <a class="btn" href="/Mi Proyecto/historia.html">HISTORIA</a>
         <a class="btn" href="/Mi Proyecto/juguemos.html">JUGUEMOS</a>
@@ -46,12 +46,28 @@
             <br> En los laboratorios Bells, Bjarne Stroustrup modificó el lenguaje C al C++, creando lo que muchos consideran el lenguaje de programación más popular que ha existido nunca. Además, ha sido listado en lo alto de los top ten de los lenguajes de programación desde 1986 y archivado en el Hall of Fame en 2003. Hoy en día es usado por Firefox, Office y Adobe PDF Reader
             <br>Esto dio el puntapie a que se sigan perfeccionando los lenguajes hasta llegar al os lenguajes de hoy en dia</p>
         </div>
-
-        
-
-      
-
     </div>
+
+    <h2 class="title_video">Un breve video para complementar lo visto</h2>
+
+    <section class="seccion-video">
+      <video poster="/Final/Info-Trabajo-Final/assets/imagenes/img-video.jpg" class="video">
+          <source src="/Final/Info-Trabajo-Final/assets/video/historia-Comp.mp4" type="video/mp4" />
+          <source src="/Final/Info-Trabajo-Final/assets/video/historia-Comp.ogv type="video/ogv"/>
+      </video> 
+
+      <div class="barra">
+          <div class="botones">
+              <button class="btn2" onclick="reproducir()"> <img src="https://trabajo-final-html-css-js-av.netlify.app/assets/imagenes/play.svg" alt="play"></button>
+              <button class="btn2" onclick="pausar()"><img src="https://trabajo-final-html-css-js-av.netlify.app/assets/imagenes/pausa.svg" alt="pausa"></button>                
+          </div>
+
+          <div class="duracion">
+            <p>Duracion video : <span id="duracion">281.10</span></p>
+          </div>
+      </div>        
+    </section>
+
 
     <footer>
       <div class="pie">
@@ -64,6 +80,6 @@
       </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
