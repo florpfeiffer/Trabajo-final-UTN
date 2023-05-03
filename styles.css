@@ -68,7 +68,7 @@ h2 {
     justify-content: space-evenly;
 }
 
-.box{
+.box {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -109,32 +109,26 @@ h2 {
     align-items: center;
 }
 
-.card1 {
+.card1, .card2, .card3 {    
     padding: 30px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
     align-items: center;
     gap: 30px;
 }
 
+.card1 {
+    grid-template-columns: 2fr 1fr;
+}
+
 .card2 {
-    padding: 30px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 40px;
 }
 
 .card3 {
-    padding: 30px;
-    display: grid;
     grid-template-columns: 1fr 3fr;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
 }
 
-.titulo {
+.titulo, .titulo2 {
     text-shadow: 2px black;
     font-size: 40px;
     text-align: center;
@@ -163,23 +157,23 @@ h2 {
     border-radius: 5px;
 }
 
-.video  {
+.video, .barra {
     background-color: #1d1d1d;
     color: white;
     display: flex;
     justify-content: space-between;
+}
+
+.video {
     margin-left: 4px;
     margin-right: 4px;
 }
 
 .barra {
-    background-color: #1d1d1d;
-    color: white;
-    display: flex;
-    justify-content: space-between;
     border-radius: 10px;
     margin: 5px;
     height: 60px;
+    color: white;
 }
 
 .botones {
@@ -189,26 +183,84 @@ h2 {
     width: 180px;
 }
 
-.btn2 {
+.btn2, .reiniciar {
     color: black;
     background-color: #E6DDC4;
-    width: 80px;
-    height: 40px;
     border-radius: 10px;
     border-style: solid;
     box-shadow: 2px 3px #678983;
+}
+
+.btn2 {
+    width: 80px;
+    height: 40px;
+}
+
+.btn2:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
 }
 
 .duracion {
     display: flex;
     margin-top: 20px;
     margin-right: 10px;
-    
+    gap: 5px;
+}
+/* Fin historia*/
+
+/* Inicio juguemos */
+
+.body2 {
+    padding: 100px;
+}
+
+.juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.espacios {
+    display: flex;
+    flex-direction: row;
+    color: #E6DDC4;
+}
+.espacios :hover {
+    background-color: rgb(48, 48, 48);
+}
+
+.espacio1, .espacio2, .espacio3 {
+    display: flex;
+    width: 280px;
+    height: 400px;
+    border: 2px solid black;
+    background-color: grey;
+    justify-content: center;    
+    text-align: center;
+    align-items: center;
+}
+
+.piezas {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 10px;   
+}
+
+.foto1, .foto2, .foto3 {
+    width: 280px;
+    height: 400px;
+}
+
+.reiniciar {
+    width: 250px;
+    height: 40px;
 }
 
 
-/* Fin hoja historia*/
-
+/* Fin juguemos*/
 footer {
     display: flex;
     height: 100px;
