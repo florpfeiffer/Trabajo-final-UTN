@@ -11,7 +11,7 @@ nav {
     margin: 0px 40px;
 }
 
-rect#pantalla1, polygon#teclado1{
+rect#pantalla1, polygon#teclado1, ellipse#mouse{
     animation: parte1 ease-in 5s  ;
     animation-iteration-count:1 ;
 }
