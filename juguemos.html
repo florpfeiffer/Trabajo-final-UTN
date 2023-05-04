@@ -10,7 +10,15 @@
 </head>
 <body>
     <nav>
-        <a href="/Mi Proyecto/index.html">logo</a>
+    <a href="/Mi Proyecto/index.html">
+        <svg class="pc" width="200" height="80">
+            <rect id="pantalla1" x="45" y="5" width="60" height="35" rx="5" fill="#F0E9D2"></rect>
+            <rect id="pantalla2" x="50" y="10" width="50" height="25" rx="5" fill="#495579"></rect>
+            <polygon id="teclado1" points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2"></polygon>
+            <polygon id="teclado2" points="57 48 ,92 48,104 58,43 58" fill="#495579"></polygon>
+        </svg>
+    </a>
+
         <ul class="menu_inicio">
           <a class="btn" href="/Mi Proyecto/historia.html">HISTORIA</a>
           <a class="btn" href="/Mi Proyecto/juguemos.html">JUGUEMOS</a>
@@ -21,7 +29,7 @@
         <h1>JUGUEMOS UN POCO</h1>
       </header>
 
-      <main class="body2">
+      <main>
         <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
 
         <section class="juego">
@@ -39,17 +47,17 @@
             </div>
 
             <div class="piezas">
-                <img class="foto2" src="/Final/Info-Trabajo-Final/assets/imagenes/rompe2.png" alt="imagen2" ondragstart="inicioArrastre(event)"/>
-                <img class="foto1" src="/Final/Info-Trabajo-Final/assets/imagenes/Rompe1.png" alt="imagen1" ondragstart="inicioArrastre(event)"/>
-                <img class="foto3" src="/Final/Info-Trabajo-Final/assets/imagenes/Rompe3.png" alt="imagen3" ondragstart="inicioArrastre(event)"/>
+                <img id="fotito2" src="/Final/Info-Trabajo-Final/assets/imagenes/rompe2.png" alt="imagen2" ondragstart="inicioArrastre(event)"/>
+                <img id="fotito1" src="/Final/Info-Trabajo-Final/assets/imagenes/Rompe1.png" alt="imagen1" ondragstart="inicioArrastre(event)"/>
+                <img id="fotito3" src="/Final/Info-Trabajo-Final/assets/imagenes/Rompe3.png" alt="imagen3" ondragstart="inicioArrastre(event)"/>
             </div>
+
+            <button onclick="reinicio()" class="reiniciar">Reiniciar</button>
 
         </section>
 
-        <button onclick="reinicio()" class="reiniciar">Reiniciar</button>
-
       </main>
         
-    <script src="juguemos.js"></script>
+    <script src="script.js"></script>
     </body>
 </html>

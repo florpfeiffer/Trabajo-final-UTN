@@ -11,6 +11,55 @@ nav {
     margin: 0px 40px;
 }
 
+rect#pantalla1, polygon#teclado1{
+    animation: parte1 ease-in 5s  ;
+    animation-iteration-count:1 ;
+}
+    
+rect#pantalla2, polygon#teclado2{
+animation: parte2 ease-in 5s  ;
+animation-iteration-count:1 ;
+}
+
+@keyframes parte1 {
+    0% {
+    transform: translate(0,-10px);
+    opacity:0;}
+    20% {
+    transform: translate(0,-10px);
+    opacity:0;}
+    30% {
+    transform: translate(0,0);
+    opacity:1;}
+    90% {
+    transform: translate(0,0);
+    opacity:1;}
+
+    100% {
+        transform: translate(0,0);
+        opacity:1;}
+}   
+    
+
+@keyframes parte2 {
+    0% {
+        transform: translate(0,-10px);
+        opacity:0;}
+        30% {
+        transform: translate(0,-10px);
+        opacity:0;}
+        40% {
+        transform: translate(0,0);
+        opacity:1;}
+        90% {
+        transform: translate(0,0);
+        opacity:1;}
+
+        100% {
+            transform:translate(0,0);
+            opacity:1;}
+}
+
 .menu_inicio {
     margin-top: 23px;
     margin-right: 10x;
@@ -59,7 +108,6 @@ h2 {
     margin: 0;
     text-align: center;
 }
-
 
 .contenido {
     margin: 200px 0px;
@@ -216,14 +264,16 @@ h2 {
 
 /* Inicio juguemos */
 
-.body2 {
-    padding: 100px;
+main {
+    padding: 30px;
+    margin: auto 0px;
 }
 
 .juego {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin: auto 0px;
 }
 
@@ -232,9 +282,8 @@ h2 {
     flex-direction: row;
     justify-content: center;
     color: #E6DDC4;
-    gap: 10px;
-    margin: auto 0px;    
-    height: 400px;
+    width: auto;
+    gap: 5px;
 
 }
 .espacios :hover {
@@ -243,36 +292,45 @@ h2 {
 
 .espacio1, .espacio2, .espacio3 {
     display: flex;
-    width: 280px;
     border: 2px solid black;
     background-color: grey;
     justify-content: center;
     text-align: center;
     align-items: center;
-    gap: 10px;
+    width: 280px; 
+    height: 400px;
+
 }
 
 .piezas {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin: 40px;
-    gap: 15px;   
+    margin: 30px;
+    gap: 15px;
 }
 
-img {
+#fotito2, #fotito1, #fotito3, .imagen {
     width: 280px;
     height: 400px;
+    display: flex;
+    border: 2px solid black;
+    background-color: grey;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .reiniciar {
     display: flex;
-    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    margin: 60px;
     padding: 10px 100px;
-    
 }
 
 /* Fin juguemos*/
+
+
 footer {
     display: flex;
     height: 100px;
