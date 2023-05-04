@@ -30,4 +30,3 @@ const pausar=()=>{
     let video=document.querySelector(".video");
     video.pause();
 }
-
