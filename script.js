@@ -1,3 +1,5 @@
+/* Código del video de la página Historia*/
+
 let videoFondo=document.querySelector("#video");
 
 console.dir(videoFondo)
@@ -29,6 +31,8 @@ const pausar=()=>{
     let video=document.querySelector(".video");
     video.pause();
 }
+
+/* Código del juego */
 
 let espacio1=document.querySelector('.espacio1')
 let espacio2=document.querySelector('.espacio2')
@@ -89,6 +93,8 @@ espacio3.addEventListener('drop', (event) => {
 
     fotito3.style.display="none"
 })
+
+/* Función para reiniciar el puzzle */
 
 function reinicio() {
     window.location.reload();

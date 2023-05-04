@@ -11,6 +11,8 @@ nav {
     margin: 0px 40px;
 }
 
+/* Icono de pc superior*/
+
 rect#pantalla1, polygon#teclado1, ellipse#mouse{
     animation: parte1 ease-in 5s  ;
     animation-iteration-count:1 ;
@@ -40,7 +42,6 @@ animation-iteration-count:1 ;
         opacity:1;}
 }   
     
-
 @keyframes parte2 {
     0% {
         transform: translate(0,-10px);
@@ -59,6 +60,8 @@ animation-iteration-count:1 ;
             transform:translate(0,0);
             opacity:1;}
 }
+
+/* Iconos de la barra superior*/
 
 .menu_inicio {
     margin-top: 23px;
@@ -84,6 +87,7 @@ animation-iteration-count:1 ;
     box-shadow: 2px 3px #678983;
 }
 
+/* Cuerpo de la página principal */
 header {
     display: flex;
     align-items: center;
@@ -108,6 +112,8 @@ h2 {
     margin: 0;
     text-align: center;
 }
+
+/* Tarjetas con el link de historia y juego */
 
 .contenido {
     margin: 200px 0px;
@@ -148,7 +154,8 @@ h2 {
     box-shadow: none;
 }
 
-/* Inicio Historia */
+/* Inicio página Historia */
+
 .cuerpo {
     display: flex;
     padding: 90px;
@@ -156,6 +163,8 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
+/* Titulares con párrafos */
 
 .card1, .card2, .card3 {    
     padding: 30px;
@@ -188,6 +197,8 @@ h2 {
     font-size: 16px;
 }
 
+/* Sección de video */
+
 .title_video {
     margin-top: 100px;
     font-size: 40px;
@@ -217,6 +228,8 @@ h2 {
     margin-right: 4px;
 }
 
+/* Barra y botones del video */
+
 .barra {
     border-radius: 10px;
     margin: 5px;
@@ -236,6 +249,8 @@ h2 {
     height: 40px;
 }
 
+/* Acá comparten la propiedad tanto los botones del video como el botón de reiniciar el juego */
+
 .btn2, .reiniciar {
     color: black;
     background-color: #E6DDC4;
@@ -249,20 +264,15 @@ h2 {
     box-shadow: none;
 }
 
-.reiniciar:active {
-    transform: translate(3px, 3px);
-    box-shadow: none;
-}
-
 .duracion {
     display: flex;
     margin-top: 20px;
     margin-right: 10px;
     gap: 5px;
 }
-/* Fin historia*/
+/* Fin página Historia*/
 
-/* Inicio juguemos */
+/* Inicio página Juguemos */
 
 main {
     padding: 30px;
@@ -276,6 +286,8 @@ main {
     justify-content: center;
     margin: auto 0px;
 }
+
+/* Zona destino del puzzle */
 
 .espacios {
     display: flex;
@@ -302,6 +314,8 @@ main {
 
 }
 
+/* Piezas del puzzle */
+
 .piezas {
     display: flex;
     flex-direction: row;
@@ -320,6 +334,7 @@ main {
     align-items: center;
 }
 
+/* Botón de reinicio */
 .reiniciar {
     display: flex;
     justify-items: center;
@@ -328,8 +343,14 @@ main {
     padding: 10px 100px;
 }
 
+.reiniciar:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
+
 /* Fin juguemos*/
 
+/* Pie de página principal e Historia*/
 
 footer {
     display: flex;
